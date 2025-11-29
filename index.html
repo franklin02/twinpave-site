@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +43,7 @@
       gap: 2.5rem;
     }
     h1 {
-      font-size: clamp(2.4rem, 4vw, 3.1rem);
+      font-size: clamp(2.6rem, 4vw, 3.1rem);
       line-height: 1.1;
       margin: 0 0 1rem;
     }
@@ -55,6 +54,9 @@
       letter-spacing: 0.08em;
       font-weight: 600;
       opacity: 0.9;
+    }
+    h3 {
+      font-size: 1rem;
     }
     p {
       line-height: 1.6;
@@ -89,10 +91,6 @@
       border-radius: 1rem;
       border: 1px solid rgba(255,255,255,0.12);
       background: radial-gradient(circle at top left, rgba(80,180,255,0.12), transparent 55%);
-    }
-    .card h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1rem;
     }
     .metric {
       font-weight: 600;
@@ -146,6 +144,22 @@
       opacity: 0.8;
     }
     .milestone-text {
+      font-size: 0.95rem;
+    }
+    /* Deck-style list */
+    .deck-list {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .deck-item-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      opacity: 0.85;
+    }
+    .deck-item-body {
       font-size: 0.95rem;
     }
     @media (max-width: 640px) {
@@ -251,6 +265,74 @@
     </section>
 
     <section>
+      <h2>News &amp; Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Stage 1 Winner · ARPA-I Ideas Challenge</h3>
+          <p>
+            T-GRO recognized by the U.S. DOT’s Advanced Research Projects Agency–Infrastructure
+            as a Stage 1 winning concept, with prize funding to advance twin-guided
+            robotic overlays toward deployment.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Ideas Bootcamp · Washington, D.C.</h3>
+          <p>
+            Invited to present T-GRO to federal R&amp;D leaders, venture investors,
+            and practitioners, refining the technical and commercialization roadmap
+            for Stage 2 and beyond.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Pilot Corridors · Under Development</h3>
+          <p>
+            Designing initial pilots on interstate and urban arterial segments to
+            validate digital twin integration, robotic fleet control, and pay-factor
+            gains in live work zones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>For Partners &amp; Investors</h2>
+      <div class="deck-list">
+        <div>
+          <div class="deck-item-title">Problem</div>
+          <div class="deck-item-body">
+            Nighttime overlays create long closures, worker exposure, and inconsistent
+            quality. Agencies lack a coordinated way to use data, automation, and robots
+            to manage resurfacing as a system.
+          </div>
+        </div>
+        <div>
+          <div class="deck-item-title">Solution</div>
+          <div class="deck-item-body">
+            TwinPave combines corridor digital twins, generative scheduling, and robotic
+            paving fleets into one platform that plans, executes, and verifies overlays
+            with measurable gains in time, safety, and quality.
+          </div>
+        </div>
+        <div>
+          <div class="deck-item-title">Traction</div>
+          <div class="deck-item-body">
+            ARPA-I Stage 1 winner; active collaboration with DOT partners and OEMs on
+            pilot corridors integrating ATMS data, IC/thermal telemetry, and supervised
+            robotic work-cells.
+          </div>
+        </div>
+        <div>
+          <div class="deck-item-title">Go-To-Market</div>
+          <div class="deck-item-body">
+            Start with high-value pilot overlays under performance-based contracts,
+            then scale via SaaS licensing and “T-GRO-ready” certifications for
+            contractors and equipment manufacturers.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>Contact</h2>
       <p>
         Interested in pilot deployments, research collaborations, or investment discussions
@@ -268,4 +350,3 @@
   </div>
 </body>
 </html>
-```
