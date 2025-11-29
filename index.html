@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,6 +116,38 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Timeline / About styles */
+    .timeline {
+      border-left: 1px solid rgba(255,255,255,0.18);
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .milestone {
+      position: relative;
+      padding-left: 0.25rem;
+    }
+    .milestone::before {
+      content: "";
+      position: absolute;
+      left: -1.6rem;
+      top: 0.4rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 999px;
+      background: #58a6ff;
+      box-shadow: 0 0 0 3px rgba(88,166,255,0.28);
+    }
+    .milestone-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.8;
+    }
+    .milestone-text {
+      font-size: 0.95rem;
+    }
     @media (max-width: 640px) {
       header, main, .footer { padding-left: 5vw; padding-right: 5vw; }
     }
@@ -194,6 +227,30 @@
     </section>
 
     <section>
+      <h2>About TwinPave Robotics Lab</h2>
+      <p>
+        TwinPave Robotics Lab is a founder-led studio translating research in digital twins,
+        generative optimization, and construction robotics into field-ready pavement
+        resurfacing solutions. We partner with DOTs, contractors, and OEMs to pilot
+        twin-guided robotic overlay cells on real corridors.
+      </p>
+      <div class="timeline">
+        <div class="milestone">
+          <div class="milestone-label">2024 · ARPA-I IDEAS CHALLENGE</div>
+          <div class="milestone-text">T-GRO concept selected as Stage 1 winner, validating the vision for twin-guided robotic overlays.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-label">2025 · PILOT DESIGN &amp; TOOLING</div>
+          <div class="milestone-text">Build corridor twin prototype, integration adapters, and supervised robotic work-cells with ATMA protection.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-label">2026+ · DEPLOYMENT PARTNERS</div>
+          <div class="milestone-text">Scale to multi-corridor pilots and performance-based resurfacing programs with twin-guided robotic fleets.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>Contact</h2>
       <p>
         Interested in pilot deployments, research collaborations, or investment discussions
@@ -211,3 +268,4 @@
   </div>
 </body>
 </html>
+```
