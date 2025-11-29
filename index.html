@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TwinPave Robotics Lab | twinpave.ai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="TwinPave Robotics Lab – digital twin–guided robotic paving fleets for safer, faster, lower-carbon pavement resurfacing." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #050816;
+      color: #f5f5f5;
+    }
+    header {
+      padding: 2.5rem 8vw 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.9;
+    }
+    main {
+      padding: 2rem 8vw 3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 2.5rem;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 4vw, 3.1rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 1.75rem 0 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+    p {
+      line-height: 1.6;
+      max-width: 60rem;
+      opacity: 0.9;
+    }
+    .tagline {
+      font-size: 1.05rem;
+      max-width: 36rem;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 1.5rem;
+    }
+    .pill {
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.8rem;
+      opacity: 0.95;
+      backdrop-filter: blur(6px);
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+    .card {
+      padding: 1.25rem 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: radial-gradient(circle at top left, rgba(80,180,255,0.12), transparent 55%);
+    }
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+    }
+    .metric {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: 0.4rem;
+    }
+    .footer {
+      padding: 1.5rem 8vw 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
+    .highlight {
+      color: #7ee787;
+      font-weight: 600;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      header, main, .footer { padding-left: 5vw; padding-right: 5vw; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TwinPave Robotics Lab</div>
+    <div class="badge">twinpave.ai &nbsp;·&nbsp; ARPA-I T-GRO Concept</div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Twin-Guided Robotic Pavement Overlays (T-GRO)</h1>
+      <p class="tagline">
+        Digital twin–guided <span class="highlight">robotic paving fleets</span> that cut lane closures,
+        user delay, and CO₂e while delivering pay-factor–grade quality in real time.
+      </p>
+
+      <div class="pill-row">
+        <div class="pill">Digital Twin–Driven Planning</div>
+        <div class="pill">Robotic Overlay Fleets</div>
+        <div class="pill">Generative AI Scheduling</div>
+        <div class="pill">Embedded QA / IC / Thermal</div>
+        <div class="pill">Safer, Faster, Cleaner Resurfacing</div>
+      </div>
+
+      <p>
+        TwinPave Robotics Lab builds on the ARPA-I award-winning T-GRO concept:
+        a continuously updated corridor digital twin that orchestrates semi-autonomous
+        milling–paving–rolling–striping fleets. Our platform generates nightly overlay
+        plans, evaluates traffic, safety, and carbon impacts, and drives robotic work-cells
+        to execute overlays with fewer lane-closure hours and higher, more consistent quality.
+      </p>
+    </section>
+
+    <section>
+      <h2>What We Enable</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Digital Twin–Guided Planning</h3>
+          <p>
+            2–72 hour corridor twins integrate traffic, geometry, plant production,
+            and fleet telemetry to generate constructible overlay portfolios that
+            agencies can trust and audit.
+          </p>
+          <p class="metric">Goal: &ge; 40–50% fewer lane-closure hours.</p>
+        </div>
+        <div class="card">
+          <h3>Robotic Paving Fleets</h3>
+          <p>
+            Coordinated 3D pavers, IC rollers, and ATMA/TMA vehicles operate as
+            synchronized work-cells, reducing on-foot exposure and improving
+            density and smoothness.
+          </p>
+          <p class="metric">Goal: &ge; 30–50% fewer worker exposure hours.</p>
+        </div>
+        <div class="card">
+          <h3>Data-Centric QA & Optimization</h3>
+          <p>
+            Intelligent compaction, thermal maps, and IRI snapshots feed directly into the twin,
+            closing the loop between design, execution, and pay-factor quality.
+          </p>
+          <p class="metric">Goal: &ge; 1–2 pay-factor grade improvements.</p>
+        </div>
+        <div class="card">
+          <h3>Cleaner, More Predictable Overlays</h3>
+          <p>
+            Optimized truck dispatch and rolling patterns cut idling, detours, and rework,
+            delivering lower-carbon resurfacing and more reliable reopen times.
+          </p>
+          <p class="metric">Goal: &ge; 10–20% CO₂e reduction.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Interested in pilot deployments, research collaborations, or investment discussions?<br/>
+        Please contact <span class="highlight">TwinPave Robotics Lab</span> via GitHub:
+        <a href="https://github.com/franklin02" target="_blank" rel="noopener">github.com/franklin02</a>
+        or your usual professional channels.
+      </p>
+    </section>
+  </main>
+
+  <div class="footer">
+    TwinPave Robotics Lab · twinpave.ai (placeholder domain) ·
+    Concept based on ARPA-I Stage 1 winning idea: Twin-Guided Robotic Pavement Overlays (T-GRO).
+  </div>
+</body>
+</html>
